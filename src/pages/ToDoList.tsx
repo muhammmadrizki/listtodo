@@ -1,6 +1,7 @@
 // type Todo = {};
 
 import { TodoInput } from "../components/ToDoInput";
+import { TodoItem } from "../components/ToDoItem";
 
 export function Todo() {
   return (
@@ -10,6 +11,9 @@ export function Todo() {
           To Do List
         </h1>
         <TodoInput />
+        <ul className="space-y-4">
+          <TodoItem />
+        </ul>
       </div>
     </div>
   );
